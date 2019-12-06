@@ -11,7 +11,7 @@ pipeline{
         sh 'echo "En France, on dit, salut tout le monde"'
         }
     }
-    stage{'Other languages'){
+    stage('Other languages'){
       steps{
         sh '''
           echo "Hola el mundo"
