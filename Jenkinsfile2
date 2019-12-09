@@ -1,19 +1,23 @@
-pipleline{
+pipeline{
   agent any
   stages{
-    stage('One'){
+    stage('English'){
       steps{
-        sh 'echo "Hello, this is Ali"'
-      }
-    }
-    stage('Two'){
-      steps{
-        sh 'echo "Hi, its me again!"'
+        sh 'echo "In English, we say Hello World"'
         }
     }
-    stage('Three'){
+    stage('French'){
       steps{
-        sh 'echo "Hiii"'
+        sh 'echo "En France, on dit, salut tout le monde"'
+        }
+    }
+    stage('Other languages'){
+      steps{
+        sh '''
+          echo "Hola el mundo"
+          echo "Ciao el miendo"
+          ls -lah
+        '''
       }
     }
   }
