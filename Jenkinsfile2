@@ -3,17 +3,17 @@ pipleline{
   stages{
     stage('One'){
       steps{
-        echo 'Hello, this is Ali'
+        sh 'echo "Hello, this is Ali"'
       }
     }
     stage('Two'){
       steps{
-        echo 'Hi, its me again!'
+        sh 'echo "Hi, its me again!"'
         }
     }
     stage('Three'){
       steps{
-        echo 'Hiiii'
+        sh 'echo "Hiii"'
       }
     }
   }
