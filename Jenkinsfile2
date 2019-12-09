@@ -1,0 +1,20 @@
+pipleline{
+  agent any
+  stages{
+    stage('One'){
+      steps{
+        echo 'Hello, this is Ali'
+      }
+    }
+    stage('Two'){
+      steps{
+        echo 'Hi, it's me again!'
+        }
+    }
+    stage('Three'){
+      steps{
+        echo 'Hiiii'
+      }
+    }
+  }
+}
