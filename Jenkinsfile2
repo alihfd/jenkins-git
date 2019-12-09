@@ -8,7 +8,7 @@ pipleline{
     }
     stage('Two'){
       steps{
-        echo 'Hi, it's me again!'
+        echo 'Hi, its me again!'
         }
     }
     stage('Three'){
